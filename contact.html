@@ -52,6 +52,142 @@ Date: 9/12/2025
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391201.74161643593!2d-75.44696573558242!3d40.002559022363826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463da54c347ecfdb%3A0x9e803f4e7f8aebaf!2sSlowcooking%20LLC!5e0!3m2!1sen!2sca!4v1764864427849!5m2!1sen!2sca" class="map"></iframe>
             </div>
     </main>
+    
+    <div class="form-container">
+        <h1>User Profile/Account Registration Form</h1>
+        <form action="#" method="post" id="userForm" novalidate>
+            <!-- Text Input -->
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <!-- Text Input -->
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Phone Input -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            </div>
+
+            <!-- Date Input -->
+            <div class="form-group">
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+
+            <!-- Password Confirmation -->
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <!-- Gender Selection -->
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        
+                    </div>
+                    <div class="radio-item">
+                        <label for="female">&nbsp;&nbsp;Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        
+                    </div>
+                    <div class="radio-item">
+                        <label for="other">&nbsp;&nbsp;Other</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="form-group">
+                <label>Favourite Product?</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <label for="cooker1">Slow Savour</label>
+                        <input type="checkbox" id="cooker1" name="favproduct" value="cooker1">
+                        
+                    </div>
+                    <div class="checkbox-item">
+                        <label for="cooker2">Stew Master 1000</label>
+                        <input type="checkbox" id="cooker2" name="favproduct" value="cooker2">
+                        
+                    </div>
+                    <div class="checkbox-item">
+                        <label for="cooker3">Simmer Sense Pro</label>
+                        <input type="checkbox" id="cooker3" name="favproduct" value="cooker3">
+                        
+                    </div>
+                    <div class="checkbox-item">
+                        <label for="cooker4">Simmer Sense ULTRA</label>
+                        <input type="checkbox" id="cooker4" name="favproduct" value="cooker4">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Country Selection -->
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="form-group">
+                <div class="checkbox-item">
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                </div>
+            </div>
+            
+            <!-- Email Advertising -->
+            <div class="form-group">
+                <div class="checkbox-item">
+                    <label for="terms">I agree to be emailed advertisments</label>
+                    <input type="checkbox" id="advertising-in-mail" name="terms" required>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Form</button>
+        </form>
+    </div>
+    
     <!-- Use the footer area to add webpage footer content -->
     <footer>
         <p>&copy; Copyright 2025. All Rights Reserved.</p>
