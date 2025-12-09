@@ -1,6 +1,6 @@
 /*
 Author: Nolan Dunham
-Date: 4/12/2025
+Date: 9/12/2025
 File Name: sytles.css (Term Project)
 */
 
@@ -175,6 +175,49 @@ footer a {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
+
+/* Tablet Viewport: Style rules for table */
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+    
+    .viewex {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    #example {
+        display: none;
+    }
+    
+    th, td {
+        border: 1px solid #000;
+        padding: 2%
+    }
+    
+    th {
+        background-color: #baa111;
+        color: #000000;
+        font-size: 1.15em;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: #ffe656;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #ffbb00
+    }
+    
     /* Tablet Viewport: Style rule for map */
     .map class {
         width: 500px;
